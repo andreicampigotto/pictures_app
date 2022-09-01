@@ -1,4 +1,7 @@
-# pictures_app
+# pictures_app 
+### App to fetch images from site: https://imgur.com
+
+
 
 ## Built With
 - [Android SDK](https://developer.android.com/) - Create an Android App
