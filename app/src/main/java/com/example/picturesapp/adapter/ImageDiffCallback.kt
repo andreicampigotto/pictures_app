@@ -1,14 +1,14 @@
 package com.example.picturesapp.adapter
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.picturesapp.model.Image
+import com.example.picturesapp.model.Data
 
-class ImageDiffCallback : DiffUtil.ItemCallback<Image>() {
-    override fun areItemsTheSame(oldItem: Image, newItem: Image): Boolean {
+class ImageDiffCallback : DiffUtil.ItemCallback<Data>() {
+    override fun areItemsTheSame(oldItem: Data, newItem: Data): Boolean {
         return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItem: Image, newItem: Image): Boolean {
-        return oldItem.id == newItem.id
+    override fun areContentsTheSame(oldItem: Data, newItem: Data): Boolean {
+        return oldItem == newItem
     }
 }

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.picturesapp.R
 import com.example.picturesapp.adapter.ImageAdapter
 import com.example.picturesapp.databinding.ImagesFragmentBinding
-import com.example.picturesapp.model.Image
+import com.example.picturesapp.model.Data
 import com.example.picturesapp.viewModel.ImageViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,7 +23,7 @@ class ImagesFragment : Fragment(R.layout.images_fragment) {
     private val imageAdapter = ImageAdapter()
 
     private val observerImage =
-        Observer<List<Image>> {
+        Observer<List<Data>> {
             imageAdapter.update(it.toMutableList())
             binding.progressBar.visibility = View.GONE
             binding.imagesRecyclerView.visibility = View.VISIBLE
