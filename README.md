@@ -11,7 +11,7 @@
 ### Requirements 
 - Android Studio
 - Java JDK
-- AVD or Android SmartPhone later than API level 23/ Android 6.0 Marshmallow
+- AVD or Android SmartPhone later than API level 21
 
 
 ## Built With
@@ -19,7 +19,8 @@
 - [Kotlin](https://developer.android.com/kotlin) - Develop Android apps with Kotlin
 - [Hilt](https://dagger.dev/hilt) - Dependency injection
 - [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) - Coroutines
-- [Glide](https://github.com/bumptech/glide) - Glide
+- [Glide](https://github.com/bumptech/glide) - Glide 
+- [Mockito](https://site.mockito.org) - Unit tests
 
 ### Authors
 - Name: Andrei Campigotto
