@@ -24,5 +24,5 @@
 
 ### Authors
 - Name: Andrei Campigotto
-- email: andreicampigotto@icloud.com
+- E-mail: andreicampigotto@icloud.com
 - [Linkedin](https://www.linkedin.com/in/andrei-campigotto/)
