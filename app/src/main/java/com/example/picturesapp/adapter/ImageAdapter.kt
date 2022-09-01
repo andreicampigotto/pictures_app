@@ -41,6 +41,7 @@ class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(image: Image) {
         image.link.let {
             Glide.with(itemView.context).load(it)
+                .placeholder(R.drawable.ic_placeholder_cat)
                 .into(binding.ivImage)
         }
     }

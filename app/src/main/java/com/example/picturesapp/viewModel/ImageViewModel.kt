@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ImageViewModel @Inject constructor(
-    private val imgRepository: ImgRepository
+    private val repository: ImgRepository
 ) : ViewModel() {
 
     private val _list = MutableLiveData<List<Image>>()
@@ -20,7 +20,11 @@ class ImageViewModel @Inject constructor(
 
     fun getImages() {
         viewModelScope.launch {
-            _list.value = imgRepository.getImages()
+            val returnedImages =
+                repository.getImages()
+            returnedImages?.let {
+                _list.value = it
+            }
         }
     }
 }
