@@ -39,6 +39,9 @@ class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val binding: ItemImageBinding = ItemImageBinding.bind(itemView)
 
     fun bind(image: Data) {
-        Glide.with(itemView.context).load(image.images[0].link).into(binding.ivImage)
+        Glide.with(itemView.context)
+            .load(image.images[0].link)
+            .placeholder(R.drawable.ic_placeholder_cat)
+            .into(binding.ivImage)
     }
 }
